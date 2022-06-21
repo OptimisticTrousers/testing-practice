@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const capitalize = require("./practice");
 
 describe("capitalize", () => {
