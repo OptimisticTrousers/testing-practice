@@ -1,19 +1,19 @@
 const analyzeArray = (array) => {
-  const sum = array.reduce((prevValue, currValue) => prevValue + currValue, 0);
+  const sum = array.reduce((prevValue, currValue) => prevValue + Number(currValue), 0);
 
   const arrayLength = array.length;
 
-  array.sort();
+  array.sort((a, b) => a - b);
 
-  const min = array[0];
+  const min = Number(array[0]);
 
-  const max = array[arrayLength];
+  const max = array[arrayLength - 1];
 
   return {
     average: sum / arrayLength,
     min,
     max,
-    arrayLength,
+    length: arrayLength,
   };
 };
 
