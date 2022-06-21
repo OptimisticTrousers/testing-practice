@@ -8,11 +8,11 @@ describe('capitalize', () => {
         expect(capitalize("Enigma")).toBe("Enigma")
     });
     test('fails with a number', () => {
-        expect(capitalize(1320)).toBe("Enigma")
+        expect(capitalize(1320)).toBe('ERROR')
     });
     test('fails with an object', () => {
         expect(capitalize({
             "age": 18,
-        })).toBe("Enigma")
+        })).toBe('ERROR')
     });
 })
