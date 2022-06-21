@@ -9,7 +9,7 @@ describe("calculator", () => {
     expect(calculator.add({"name": "bob"}, 20)).toBe('ERROR');
   });
   test("Adding a NaN", () => {
-    expect(calculator.add(NaN, 20)).toBe('ERROR');
+    expect(calculator.add(NaN, 20)).toBe(NaN);
   });
   test("Adding an array", () => {
     expect(calculator.add([], 20)).toBe('ERROR');
