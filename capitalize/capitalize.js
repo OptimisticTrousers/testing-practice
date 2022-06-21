@@ -7,4 +7,6 @@ const capitalize = (string) => {
   return "ERROR";
 };
 
+
+
 module.exports = capitalize;
