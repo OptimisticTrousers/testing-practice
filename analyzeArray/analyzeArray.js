@@ -1,5 +1,5 @@
 const analyzeArray = (array) => {
-  const sum = array.reduce((prevValue, currValue) => prevValue + Number(currValue), 0);
+  const sum = array.reduce((prevValue, currValue) => Number(prevValue) + Number(currValue), 0);
 
   const arrayLength = array.length;
 
@@ -10,7 +10,7 @@ const analyzeArray = (array) => {
   const max = array[arrayLength - 1];
 
   return {
-    average: sum / arrayLength,
+    average: Number((sum / arrayLength).toFixed(2)),
     min,
     max,
     length: arrayLength,

@@ -20,7 +20,7 @@ describe("analyzing array", () => {
   });
   test("non-integer average", () => {
     expect(analyzeArray([3, 4, 4])).toEqual({
-      average: 3.66,
+      average: 3.67,
       min: 3,
       max: 4,
       length: 3,
@@ -28,9 +28,9 @@ describe("analyzing array", () => {
   });
   test("object array element", () => {
     expect(analyzeArray([{"name": "bob"}, 4, 4])).toEqual({
-      average: 3.66,
-      min: 4,
-      max: 12,
+      average: NaN,
+      min: NaN,
+      max: 4,
       length: 3,
     });
   });
