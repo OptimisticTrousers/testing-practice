@@ -1,4 +1,4 @@
-# TOP-testing-practice
+# testing-practice
 Making a repo to test out the basics of the Jest testing library
 
 Making tests using Jest:
